@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="css/estilo.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+</style>
+</head>
+<body>
+
+<div class="topnav" id="myTopnav">
+  <a href="index.html">Principal</a>
+  <a href="dom.html"  class="active">DOM</a>
+  <a href="vectores.html">Vectores</a>
+  <a href="Condicionales.html">Condicionales</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+<script type="text/javascript">
+    function muestraOculta(id) {
+    
+       var contenidos = document.getElementById("contenidos_"+id);
+       var enlaces = document.getElementById("enlace_"+id);
+       if (contenidos.style.display == "" || contenidos.style.display == "block"){
+               contenidos.style.display = "none";
+               enlaces.innerHTML = "Mostrar contenidos";
+       }else{
+               contenidos.style.display = "block";
+               enlaces.innerHTML = "Ocultar contenidos";
+       };
+    };
+    
+    
+ </script>
+<div style="padding-left:16px">
+
+  <h2>Este es un ejemplo del método DOM</h2>
+  <p>Gracias a los ID de cada parrafo podremos modificarlos con scripts que modifican el contenido dándole propiedades de CSS.</p>
+</div>
+<div style="padding-left:16px">
+<p id="contenidos_1">Lorem ipsum dolor sit amet, consectetuer adipiscing
+    elit. Sed mattis enim vitae orci. Phasellus libero. Maecenas nisl arcu,
+    consequat congue, commodo nec, commodo ultricies, turpis. Quisque 
+   sapien nunc, posuere vitae, rutrum et, luctus at, pede. Pellentesque 
+   massa ante, ornare id, aliquam vitae, ultrices porttitor, pede. Nullam 
+   sit amet nisl elementum elit convallis malesuada. Phasellus magna sem, 
+   semper quis, faucibus ut, rhoncus non, mi. Duis pellentesque, felis eu 
+   adipiscing ullamcorper, odio urna consequat arcu, at posuere ante quam 
+   non dolor. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+   Duis scelerisque.</p>
+   <a id="enlace_1" href="#" onclick ="muestraOculta(1)">Ocultar contenidos</a>
+   
+   <br>
+   
+   <p id="contenidos_2">Lorem ipsum dolor sit amet, consectetuer adipiscing
+    elit. Sed mattis enim vitae orci. Phasellus libero. Maecenas nisl arcu,
+    consequat congue, commodo nec, commodo ultricies, turpis. Quisque 
+   sapien nunc, posuere vitae, rutrum et, luctus at, pede. Pellentesque 
+   massa ante, ornare id, aliquam vitae, ultrices porttitor, pede. Nullam 
+   sit amet nisl elementum elit convallis malesuada. Phasellus magna sem, 
+   semper quis, faucibus ut, rhoncus non, mi. Duis pellentesque, felis eu 
+   adipiscing ullamcorper, odio urna consequat arcu, at posuere ante quam 
+   non dolor. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+   Duis scelerisque.</p>
+   <a id="enlace_2" href="#" onclick ="muestraOculta(2)">Ocultar contenidos</a>
+   
+   <br>
+   
+   <p id="contenidos_3">Lorem ipsum dolor sit amet, consectetuer adipiscing
+    elit. Sed mattis enim vitae orci. Phasellus libero. Maecenas nisl arcu,
+    consequat congue, commodo nec, commodo ultricies, turpis. Quisque 
+   sapien nunc, posuere vitae, rutrum et, luctus at, pede. Pellentesque 
+   massa ante, ornare id, aliquam vitae, ultrices porttitor, pede. Nullam 
+   sit amet nisl elementum elit convallis malesuada. Phasellus magna sem, 
+   semper quis, faucibus ut, rhoncus non, mi. Duis pellentesque, felis eu 
+   adipiscing ullamcorper, odio urna consequat arcu, at posuere ante quam 
+   non dolor. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+   Duis scelerisque.</p>
+
+
+   <a id="enlace_3" href="#" onclick="muestraOculta(3)">Ocultar contenidos</a>
+   
+   
+</div>
+   
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+</body>
+</html>

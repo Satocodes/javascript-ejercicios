@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejemplos Javascript Unidad 7</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		input {
+			widows: 300px;
+			padding: 10px;
+			margin-bottom: 5px;
+			display: block;
+		}
+	</style>
+</head>
+<body>
+<form name="formulario" method="post" action="#">
+ <!-- Nombre de usuario. Campo obligatorio, entre 5-40 caracteres. Sólo se
+permiten letras y números -->
+ <input type="text" name="nombre" placeholder="Su nombre de usuario" required
+pattern="[A-Za-z0-9]{5,40}" title="Letras y números. Tamaño mínimo: 5. Tamaño
+máximo: 40">
+<input type="submit" value="Verificar">
+</form>
+
+</body>
+</html>

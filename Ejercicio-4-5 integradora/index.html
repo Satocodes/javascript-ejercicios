@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="css/estilo.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+</style>
+</head>
+<body>
+
+<div class="topnav" id="myTopnav">
+  <a href="index.html" class="active">Principal</a>
+  <a href="dom.html">DOM</a>
+  <a href="vectores.html">Vectores</a>
+  <a href="Condicionales.html">Condicionales</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<div style="padding-left:16px">
+  <h2>Esta es la página principal podemos ver lo siguiente</h2>
+
+    <ul> 
+      <li>
+     <b>  <a href="dom.html">Ejemplo funcional de DOM.</a></b>
+    </li>
+    <li>
+      <b>  <a href="vectores.html">Ejemplo funcional de Vectores.</a></b>
+     </li>
+     <li>
+      <b>  <a href="condicionales.html">Ejemplo funcional de Condicionales.</a></b>
+     </li>
+
+    </ul>
+  
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+</body>
+</html>

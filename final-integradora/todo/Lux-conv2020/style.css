@@ -1,0 +1,233 @@
+
+
+
+
+.fuenteflaca {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: normal;
+	font-size: 1.5em;
+	
+	  color: #00336A;
+	}
+	
+	.fuentegorda {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	font-size: 2em;
+	font-weight: 8 00;
+	  color: #00336A;
+	}
+
+	.parrafos {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.2em;
+	color: #00336A;
+	}
+
+	.optins {
+		font-family: 'Montserrat', sans-serif;
+		font-size: 0.8em;
+		color: #00336A;
+		}
+
+	.selecciones {
+		font-family: 'Montserrat', sans-serif;
+		font-size: 1em;
+		color: #00336A;
+	}
+
+	.significapeligro {
+		color:red; 
+		font-size: small;
+		font-weight: bold;
+	}
+
+	.secciones {
+		
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+
+	.secciones2 {
+		
+		
+		padding-bottom: 12px;
+	}
+
+	body {
+		/* Location of the image */
+		background-image: url(img/fondo1920.jpg);
+		
+		/* Image is centered vertically and horizontally at all times */
+		background-position: center center;
+		
+		/* Image doesn't repeat */
+		background-repeat: no-repeat;
+		
+		/* Makes the image fixed in the viewport so that it doesn't move when 
+		   the content height is greater than the image height */
+		background-attachment: fixed;
+		
+		/* This is what makes the background image rescale based on its container's size */
+		background-size: cover;
+		
+		/* Pick a solid background color that will be displayed while the background image is loading */
+		background-color:#fff;
+		
+		/* SHORTHAND CSS NOTATION
+		 * background: url(background-photo.jpg) center center cover no-repeat fixed;
+		 */
+	  }
+	  
+	  /* For mobile devices */
+	  @media only screen and (max-width: 767px) {
+		body {
+		  /* The file size of this background image is 93% smaller
+		   * to improve page load speed on mobile internet connections */
+		  background-image: url(img/fondo767.jpg);
+		}
+		}
+		.leftImage {
+			top: 20px; /* your required value */
+			left: 0;
+			margin-top:450px;
+		
+			width: 250px;
+			height: 250px;
+			position: fixed;
+		  }
+		  
+		  .rightImage {
+			top: 20px; /* your required value */
+			right: 0;
+			width: 150px;
+			height: 100%;
+			position: fixed;
+		  }
+
+		  .espacios{
+			  padding-top: 15px;
+			
+		  }
+
+		  
+
+ 
+ .logodesktop{
+	top: 20px; /* your required value */
+ 
+			 margin-left: 120px;
+			 position: fixed;
+ }
+ 
+ /* Media querys para ocultar/mostrar imagen */
+ @media only screen and (max-width: 992px) {
+	 .logomovil{
+	 display: block;
+	visibility:visible;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 40%;
+	
+	
+ }
+ 
+ .logodesktop{
+ 
+ 
+	 display: none;
+ 
+ }
+ 
+ 
+ 
+ }
+ 
+ @media only screen and (min-width: 992px) {
+ 
+ .logomovil{
+ 
+ position: center;
+ display: none;
+ visibility:none;
+ }
+
+ .logodesktop{
+ margin-left: 10%;
+ width: 35%;
+ position: center;
+ visibility:visible;
+ 
+ }
+ 
+ }
+ 
+ 
+ @media (min-width: 992px) {
+	.logodesktop{
+	
+	
+	  }
+	}
+	
+	
+	@media (min-width: 1110px) {
+	.logodesktop{
+	
+	
+	
+	  }
+	}
+	
+	@media (min-width: 1210px) {
+	.logodesktop{
+	
+	
+	
+	  }
+	}
+	
+	
+	  @media (min-width: 1410px) {
+	.logodesktop{
+	
+	
+	  }
+	
+	}
+	
+	
+	@media (min-width: 1610px) {
+	.logodesktop{
+	
+	
+	
+	  }
+	
+	}
+	
+	@media (min-width: 1810px) {
+	.logodesktop{
+	
+	
+	
+	  }
+	
+	}
+	
+	
+	@media (min-height: 150px) {
+	.logodesktop{
+	
+	
+	
+	  }
+	
+	}
+
+	.exitos{
+		width: 85%;
+	}
+
+	

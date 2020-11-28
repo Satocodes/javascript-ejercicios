@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--
+    Abrir el archivo evaluacion5.html y guardarlo como evaluacion5_apellido.html (ej. evaluacion5_rodriguez.html)
+
+Partiendo del siguiente array: 
+
+    var letras = ['T', 'R', 'W', 'I', 'U', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E', 'A', 'O'];
+
+Elaborar un pequeño script que: 
+
+    Le pida al usuario que ingrese un número entre 0 y 25, y una letra, y las almacene cada dato en una variable. (Pista: prompt() )
+    En primer lugar (y en una sola instrucción) se debe comprobar si el número es menor que 0 o mayor que 25. Si ese es el caso, se muestra un mensaje al usuario indicando que el número proporcionado no es válido y el programa no muestra más mensajes. 
+    Si el número es válido, se calcula la letra que le corresponde en el array.
+    Una vez calculada la letra, se debe comparar con la letra indicada por el usuario. Si no coinciden, se muestra un mensaje al usuario diciéndole que la letra que “Ha perdido”. En otro caso, se muestra un mensaje indicando que el número y la letra coinciden y que “Ha ganado”.
+-->
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Evaluación 5</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+	
+		<h1>Evaluación Unidad V</h1>
+		<script type="text/javascript">
+              var grupoletras = ['T', 'R', 'W', 'I', 'U', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E', 'A', 'O'];
+            var numero = prompt("Ingrese un numero de 0 a 25:"); //guarda el numero en una variable de lo que se escriba en un prompt
+            var letra = prompt("Ingrese una letra");
+           //guarda la letra en una variable de lo que se escriba en un prompt
+          
+
+            var letraelegida = grupoletras[numero]; //guarda la letra elegida desde el vcector y el índice del numero elegido
+
+            letrafinal = letra.toUpperCase(); //pasa la letra final a mayusculas
+
+         
+
+
+            if (numero<0||numero>25){
+                document.write("El numero proporcionado no es válido");
+            }else if (letrafinal==letraelegida){
+                document.write("La letra coincide con el numero. Ha ganado");
+           
+            }else {
+                document.write("La letra no coincide con el numero. Ha perdido");
+            }
+		</script>
+	
+</body>
+</html>

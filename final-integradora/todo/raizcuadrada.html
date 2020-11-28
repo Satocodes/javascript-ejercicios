@@ -1,0 +1,185 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<!-- Html de Matemáticas con javascript, es el resultado de todo lo trabajado en el curso de javascript
+Creado en 2020 por fabian gonzalez 
+espero sea de su agrado la página.-->
+
+<link rel="stylesheet" href="css/estilos.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;0,900;1,700&display=swap" rel="stylesheet"> 
+<script>
+
+  function Newton(Input){//llama a la funcion newton
+    
+     var X = 1; //guarda la variable 1
+     var FX = X*X - Input.value;
+     for (var i = 0; i < 10; i++) {
+        X = X - FX/(2*X);
+        FX = X*X - Input.value;
+     }
+     Input.value = X;
+     return true;
+  }
+  function ClearForm(form) {
+     form.Sqr.value = "";
+  }
+  
+  </script>
+</head>
+
+<body>
+<html>
+<head>
+<title>Matemáticas con javascript</title>
+<meta charset="utf-8" />
+<meta name="description" content="Matemáticas con javascript" />
+<!--llamamos a la librería de jquery-->
+<script type="text/javascript" src="js/jquery-3.5.1.js"></script> 
+<script type="text/javascript" src="js/jscript.js"></script>
+</head>
+<style>
+  nav { background: #2ba0db; }
+
+nav ul {
+  font-size: 0;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  position: relative;
+}
+
+nav ul li a {
+  color: #fff;
+  display: block;
+  font-size: 18px;
+  padding: 5px 5px;
+  transition: 0.3s linear;
+}
+
+nav ul li:hover { background: #126d9b; }
+
+nav ul li ul {
+  border-bottom: 5px solid #2ba0db;
+  display: none;
+  position: absolute;
+  width: 250px;
+}
+
+nav ul li ul li {
+  border-top: 1px solid #444;
+  display: block;
+}
+
+nav ul li ul li:first-child { border-top: none; }
+
+nav ul li ul li a {
+  background: #373737;
+  display: block;
+  padding: 10px 14px;
+}
+
+nav ul li ul li a:hover { background: #126d9b; }
+
+</style>
+<body>
+
+<div class="content">
+<header>
+ 
+  <div id="logo"></div>
+
+</header>
+<nav>
+  <nav>
+    <div class="container">
+      <ul>
+        <li><a href="index.html">Principal</a></li>
+        <li> <a href="matematicasconjs.html">Matemáticas con JS </a>
+          <ul>
+            <li><a href="formuladegravedad.html">Fórmula de gravedad</a></li>
+            <li><a href="raizcuadrada.html">Raiz Cuadrada</a></li>
+            <li><a href="productos-de-matrices.html">Productos de Matrices</a></li>
+          </ul>
+        </li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="acercade.html">Acerca de</a></li>
+      </ul>
+    </div>
+  </nav>
+</nav>
+<section id="content">
+<section id="principal">
+  <h1>.:Formula raiz cuadrada:.</h1>
+<article>
+  <form method="post">
+    Inserta el valor para sacar la raiz cudrada:
+    <p> 
+    <INPUT TYPE=TEXT NAME=Sqr SIZE=10 MAXLENGTH=10 onFocus="ClearForm(this.form)">
+    <p>
+    <INPUT TYPE="button" VALUE="Calcular" onClick="Newton(this.form.Sqr)">
+    </FORM>
+    
+</article>
+</section>
+<aside>
+
+  <ul class="accordion-menu">
+    <li>
+      <div class="dropdownlink"><i class="fa fa-road" aria-hidden="true"></i> <a href="index.html">Principal</a>   
+        <i class="fa fa-chevron-down" aria-hidden="true"></i>
+      </div>
+     
+    </li>
+    <li>
+      <div class="dropdownlink"><i class="fa fa-paper-plane" aria-hidden="true"></i> Matemáticas con JS
+        <i class="fa fa-chevron-down" aria-hidden="true"></i>
+      </div>
+      <ul class="submenuItems">
+        <li><a href="formuladegravedad.html">Fórmulade gravedad</a></li>
+        <li><a href="raizcuadrada.html">Raiz Cuadrada</a></li>
+        <li><a href="productos-de-matrices.html">Productos de Matrices</a></li>
+      </ul>
+    </li>
+    <li>
+      <div class="dropdownlink"><i class="fa fa-quote-left" aria-hidden="true"></i> <a href="contacto.html">Contacto</a>
+        <i class="fa fa-chevron-down" aria-hidden="true"></i>
+      </div>
+      
+    </li>
+    <li>
+      <div class="dropdownlink"><i class="fa fa-motorcycle" aria-hidden="true"></i><a href="acercade.html">Acerca de</a>
+        <i class="fa fa-chevron-down" aria-hidden="true"></i>
+      </div>
+ 
+    </li>
+  </ul>
+  
+
+      
+</aside>
+</section>
+<footer>
+Matemáticas con Javascript 2020 - Creado por Fabian Gonzalez
+</footer>
+</div>
+<!-- Script en Jquery para el menu horizontal-->
+<script>
+  $('nav li').hover(
+  function() {
+    $('ul', this).stop().slideDown(200);
+  },
+  function() {
+    $('ul', this).stop().slideUp(200);
+  }
+);
+</script>
+</body>
+</html>
+</body>
+</html>

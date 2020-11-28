@@ -1,0 +1,226 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<!-- Html de Matemáticas con javascript, es el resultado de todo lo trabajado en el curso de javascript
+Creado en 2020 por fabian gonzalez 
+espero sea de su agrado la página.-->
+
+<link rel="stylesheet" href="css/estilos.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;0,900;1,700&display=swap" rel="stylesheet"> 
+
+<script type="text/javascript">
+  var tiempoelevado;
+
+  function capturar () {
+
+  var altura = document.getElementById("altura").value;
+  var insertar = document.getElementById("section").innerHTML= [Math.sqrt(altura/4.9)];
+
+} 
+</script>
+
+<!--funciones para dom-->
+
+<script type="text/javascript">
+  function muestraOculta(id) {
+  
+     var contenidos = document.getElementById("contenidos_"+id);
+     var enlaces = document.getElementById("enlace_"+id);
+     if (contenidos.style.display == "" || contenidos.style.display == "block"){
+             contenidos.style.display = "none";
+             enlaces.innerHTML = "¿Cómo funciona esto?  (mostrar Con DOM)";
+     }else{
+             contenidos.style.display = "block";
+             enlaces.innerHTML = "Ocultar este contenido (Con DOM)";
+     };
+  };
+  
+  
+</script>
+<style>
+.sindatos {
+  font-size: 14px;
+  color: red;
+}
+
+</style>
+</head>
+<body>
+<html>
+<head>
+<title>Matemáticas con javascript</title>
+<meta charset="utf-8" />
+<meta name="description" content="Matemáticas con javascript" />
+<!--llamamos a la librería de jquery-->
+<script type="text/javascript" src="js/jquery-3.5.1.js"></script> 
+<script type="text/javascript" src="js/jscript.js"></script>
+</head>
+<style>
+  nav { background: #2ba0db; }
+
+nav ul {
+  font-size: 0;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  position: relative;
+}
+
+nav ul li a {
+  color: #fff;
+  display: block;
+  font-size: 18px;
+  padding: 5px 5px;
+  transition: 0.3s linear;
+}
+
+nav ul li:hover { background: #126d9b; }
+
+nav ul li ul {
+  border-bottom: 5px solid #2ba0db;
+  display: none;
+  position: absolute;
+  width: 250px;
+}
+
+nav ul li ul li {
+  border-top: 1px solid #444;
+  display: block;
+}
+
+nav ul li ul li:first-child { border-top: none; }
+
+nav ul li ul li a {
+  background: #373737;
+  display: block;
+  padding: 10px 14px;
+}
+
+nav ul li ul li a:hover { background: #126d9b; }
+
+</style>
+<body>
+
+<div class="content">
+<header>
+ 
+  <div id="logo"></div>
+
+</header>
+<nav>
+  <nav>
+    <div class="container">
+      <ul>
+        <li><a href="index.html">Principal</a></li>
+        <li> <a href="matematicasconjs.html">Matemáticas con JS </a>
+          <ul>
+            <li><a href="formuladegravedad.html">Fórmula de gravedad</a></li>
+            <li><a href="raizcuadrada.html">Raiz Cuadrada</a></li>
+            <li><a href="productos-de-matrices.html">Productos de Matrices</a></li>
+          </ul>
+        </li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="acercade.html">Acerca de</a></li>
+      </ul>
+    </div>
+  </nav>
+</nav>
+<section id="content">
+<section id="principal">
+  <h1>.:Formula para calcular la gravedad de un objeto en caída libre:.</h1>
+<article>
+
+
+  <img src="img/altura.jpg">
+  <div><span>Ingresa la altura de un objeto en ca&iacute;da libre para calcular cuanto tiempo tarda en segundos en tocar el suelo.</br> La medida de la altura se dicta desde el suelo contando como 0.</span>
+      </br>
+    </br>
+   <form action="reg.txt"> 
+              <input type="text" id="altura" placeholder="Altura del objeto">
+        <input type="button" id="button" value="envio" onclick="capturar()">
+    </form>
+  </div>
+<b>El objeto arrojado caerá a los</b>
+  <div id="section">
+      <span class="sindatos">Aún no se ingresaron datos</span>
+  </div>
+  
+<b>segundos</b>
+
+
+</br>
+<a id="enlace_1" href="#" onclick ="muestraOculta(1)">Ocultar contenidos</a>
+<div style="padding-left:16px">
+  <p id="contenidos_1">
+
+    El objeto en caída libre toma un valor de metros ingresado por usuario y ejecuta una funcion capturar() donde toma la altura y esta usando una funcion de metodo matematico "sqrt" toma la altura y simeplemente la divide entre 4.9 y guarda el valor en un document.getElementById llamado "section" y lo muestra en el html.
+  </p>
+     
+     
+     <br>
+</div>
+
+</article>
+</section>
+<aside>
+
+  <ul class="accordion-menu">
+    <li>
+      <div class="dropdownlink"><i class="fa fa-road" aria-hidden="true"></i> <a href="index.html">Principal</a>   
+        <i class="fa fa-chevron-down" aria-hidden="true"></i>
+      </div>
+     
+    </li>
+    <li>
+      <div class="dropdownlink"><i class="fa fa-paper-plane" aria-hidden="true"></i> Matemáticas con JS
+        <i class="fa fa-chevron-down" aria-hidden="true"></i>
+      </div>
+      <ul class="submenuItems">
+        <li><a href="formuladegravedad.html">Fórmulade gravedad</a></li>
+        <li><a href="raizcuadrada.html">Raiz Cuadrada</a></li>
+        <li><a href="productos-de-matrices.html">Productos de Matrices</a></li>
+      </ul>
+    </li>
+    <li>
+      <div class="dropdownlink"><i class="fa fa-quote-left" aria-hidden="true"></i> <a href="contacto.html">Contacto</a>
+        <i class="fa fa-chevron-down" aria-hidden="true"></i>
+      </div>
+      
+    </li>
+    <li>
+      <div class="dropdownlink"><i class="fa fa-motorcycle" aria-hidden="true"></i><a href="acercade.html">Acerca de</a>
+        <i class="fa fa-chevron-down" aria-hidden="true"></i>
+      </div>
+ 
+    </li>
+  </ul>
+  
+
+      
+</aside>
+</section>
+<footer>
+Matemáticas con Javascript 2020 - Creado por Fabian Gonzalez
+</footer>
+</div>
+<!-- Script en Jquery para el menu horizontal-->
+<script>
+  $('nav li').hover(
+  function() {
+    $('ul', this).stop().slideDown(200);
+  },
+  function() {
+    $('ul', this).stop().slideUp(200);
+  }
+);
+</script>
+</body>
+</html>
+</body>
+</html>
