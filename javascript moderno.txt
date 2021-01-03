@@ -1,0 +1,29 @@
+// var vs let vs cons
+
+var edad = 10 
+var edad = 20
+console.log(edad)
+ // podemos declarar varias veces la misma variable con var
+
+// si hacemos lo mismo con let
+let edad = 10 
+let edad = 20
+console.log(edad)
+// no nos deja porque ya declaramos la variable 1 sola vez
+
+var edad = 10
+
+if(true){
+	var edad = 20
+	console.log(edad)
+	}
+console.log(edad)
+// podemos ver que nustra variable en var siempre 
+// cambiara el valor independientemente de donde
+// nos encontremos
+
+// en cambio en si declaramos lo mismo con let//la variable sera
+// otra dentro del if como fuera
+// una vez que sale del if la misma "muere"
+
+
