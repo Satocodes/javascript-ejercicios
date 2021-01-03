@@ -1,3 +1,2 @@
-Ejercicios de Python en General Separados por secciones.
-
-[TEST](../main/invertir_string.py "TEST")
+Ejercicios de javascript separados por secciones.
+Algunos ejercicios son de Udemy y de la Universidad tecnologica nacional.
