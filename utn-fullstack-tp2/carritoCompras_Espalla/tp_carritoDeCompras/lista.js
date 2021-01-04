@@ -1,22 +1,22 @@
 var productos = [
-    { 
-        nombre: "harina", 
+    {
+        nombre: "harina",
         precio: 35
     },
     {
-        nombre: "pan", 
+        nombre: "pan",
         precio: 25
     },
     {
-        nombre: "papa", 
+        nombre: "papa",
         precio: 52
     },
     {
-        nombre: "palta", 
+        nombre: "palta",
         precio: 55
     },
     {
-        nombre: "fideos", 
+        nombre: "fideos",
         precio: 85
     },
     {
@@ -46,7 +46,7 @@ var productos = [
     {
         nombre: "banana",
         precio: 79
-    },		
+    },
     {
         nombre: "leche de almendras",
         precio: 145
@@ -76,8 +76,7 @@ var productos = [
         precio: 35
     },
     {
-        nombre: "salsa de tomate", 
+        nombre: "salsa de tomate",
         precio: 35
     },
-];
-
+];   

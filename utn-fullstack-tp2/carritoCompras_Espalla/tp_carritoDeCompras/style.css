@@ -1,0 +1,39 @@
+body {
+background-color: bisque;
+    }
+body {
+    background: linear-gradient(to right, #c04848, #480048);
+    min-height: 100vh
+}
+
+.text-gray {
+    color: #aaa
+}
+
+img {
+    height: 170px;
+    width: 140px
+}
+table {
+
+        padding: 20px; 
+            }
+td {
+                padding: 3px;
+                padding-left:5px;
+                padding-right:5px; 
+                    }
+
+.contenedor {
+display: flex;
+justify-content: space-around;
+}
+
+.calcular {
+margin-top: 20px;
+    }
+
+.cuadro {
+    background-color:rgb(192, 206, 114);
+    padding: 20px; 
+            }
