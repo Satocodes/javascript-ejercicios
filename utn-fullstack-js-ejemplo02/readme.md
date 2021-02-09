@@ -1,1 +1,0 @@
-Integrar javascript directamente en el HTML

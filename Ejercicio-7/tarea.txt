@@ -1,8 +1,0 @@
-Actividad Unidad 7 (opcional)
-
-    Abrir el archivo evaluacion7.html y guardarlo como evaluacion7_apellido.html (ej. evaluacion7_rodriguez.html)
-    Desarrollar un formulario validado con las siguientes características:
-        Al menos 4 campos.
-        3 de esos campos deben ser obligatorios.
-        Utilizar como mínimo 3 tipos de input distintos (por ejemplo: email, text, number).
-        Un pattern.

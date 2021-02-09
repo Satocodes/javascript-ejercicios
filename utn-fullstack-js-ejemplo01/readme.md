@@ -1,5 +1,0 @@
-Definimos las variables a utilizar. Por un lado el vector conteniendo los números y luego 4 variables para almacenar el mayor y su posición en el vector y el menor y su posición.
-
-Inicializamos mayor y menor con la primer posición del vector (podría haber sido cualquier valor dentro del vector), esto lo hacemos para asegurarnos que el resultado final esté dentro de los datos que el vector contiene. Pensemos qué pasaría si iniciamos a mayor con 100 y a menor con 0… Como ninguno de los 2 valores está dentro del vector que 100 es mas grande que cualquier valor del vector, va a quedar como el mayor número aunque no pertenezca al vector. Lo mismo ocurriría con el 0 inicializando la variable menor.
-
-Con un ciclo for recorremos cada posición del vector y comparamos el valor con el almacenado en las variables mayor y menor. En caso de que el valor de la posición del vector evaluada sea más grande que el mayor almacenado o mas chico que el valor almacenado como mínimo, entonces se reasigna respectivamente y se guarda la  posición. Finalmente se muestra por consola los datos obtenidos.

@@ -1,5 +1,0 @@
-   - Abrir el archivo evaluacion2.html para realizar el ejercicio y guardarlo com evaluacion2_apellido.html (por ejemplo: evaluacion2_perez.html)
-    -Vincular el archivo recetario.js que se encuentra en la carpeta js
-    -Utilizando prompt, pedirle al usuario que ingrese 3 ingredientes para una receta
-    -Crear una variable por cada ingrediente de la lista    
-    -Utilizar el método document.write() para escribir en la pantalla del archivo html la lista de ingredientes. Utilizar etiquetas de HTML para darle formato al contenido.
