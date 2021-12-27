@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>Calcular el área y perímetro de un cuadrado</title>
+
+    <style>
+      .formulario{
+        padding-top: 20px;
+      }
+      </style>
+
+    <!-- Bootstrap core CSS -->
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="estilos.css" rel="stylesheet">
+  </head>
+  <body class="text-center">
+
+<main class="form-signin">
+  <form class="needs-validation" novalidate>
+    <iframe src="https://embed.lottiefiles.com/animation/30990"></iframe>
+    <h1 class="h1 mb-3 fw-normal">Calcular el área y perímetro de un cuadrado</b></h1>
+<b class="h5">* Acepta fracciones de hasta 10 dígitos</b>
+<div class="formulario">
+    <div class="form-floating">
+      <input step=".0000000001" type="number" class="form-control" id="ladocuadrado"  name="ladocuadrado" placeholder="Lado del cuadrado" required>
+      <label for="floatingInput">Lado de tu cuadrado: </label>
+      <div class="valid-feedback">
+       Dato correcto!
+      </div>
+      <div class="invalid-feedback">
+        Por favor ingrese un número del lado (máximo 10 dígitos luego de la coma)
+      </div>
+    </div>
+
+
+
+    <button class="w-100 btn btn-lg btn-primary" onclick="obtenerdatos()">Calcular</button>  </div>
+<div class="resultado"></div>
+    <p class="mt-5 mb-3 text-muted">&copy; Fabian Sato</p>
+  </form>
+
+</main>
+<!-- script de validacion del form-->
+<script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+(function () {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  var forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.prototype.slice.call(forms)
+    .forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+        event.preventDefault()
+        form.classList.add('was-validated')
+          
+      }, false)
+    })
+})()
+</script>
+
+<script>
+  function obtenerdatos(){
+  const input = document.getElementById("ladocuadrado");
+  const valor = input.value;
+
+  console.log(valor);
+  }
+</script>  
+
+  </body>
+</html>
