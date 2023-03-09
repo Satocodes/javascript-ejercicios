@@ -1,7 +1,7 @@
 Javascript exercises separated in sections
 
 ## Basic Javascript:
-
+e
 ### Exercise 1
 We have a function named "solution" and we got a parameter in this function named "valor". We need to find what type of variable is the parameter "valor" and return it in the function
 
