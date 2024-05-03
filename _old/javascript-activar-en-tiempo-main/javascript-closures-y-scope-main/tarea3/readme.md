@@ -1,0 +1,1 @@
+scribe una función que declare una variable local y la imprima.

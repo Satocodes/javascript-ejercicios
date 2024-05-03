@@ -1,0 +1,1 @@
+Crea una función padre con una variable y una función hija que intente acceder a ella.

@@ -1,0 +1,1 @@
+Objetivo: Entender cómo una variable no declarada dentro de una función se convierte en una variable global.

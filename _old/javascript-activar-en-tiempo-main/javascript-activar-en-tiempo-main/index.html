@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+
+
+var fechaactual = new Date();
+var fechadecierre = new Date('2021-12-17T14:24:00'); //ESTO ES LO QUE SE CAMBIA
+
+console.log("fechaactual",fechaactual);
+console.log("full year: ",fechaactual.getFullYear());
+
+console.log("mes ahora:", fechaactual.getMonth());
+console.log("dia hoy", fechaactual.getDate());
+console.log("hora hoy", fechaactual.getHours());
+console.log("minutos hoy", fechaactual.getMinutes());
+console.log("fecha de cierre: ",fechadecierre);
+
+
+if (fechadecierre > fechaactual) {
+     
+     concursoVigente();
+}else{
+   
+    concursoFinalizado();
+
+}
+
+
+function concursoVigente(){
+
+alert("El concurso sigue vigente");
+
+}
+function concursoFinalizado(){
+    alert("se termino el concurso");
+ location.href="/index-terminado.php";
+}
+
+        
+        </script>
+</head>
+<body>
+        
+    </body>
+    </html>
